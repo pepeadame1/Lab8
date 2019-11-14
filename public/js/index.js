@@ -59,7 +59,7 @@ deletePost.on("click", event =>{
     let idVal = $(".id")[0].value
 
     $.ajax({
-        url: "http://localhost:8080/blog-posts/" + idVal,
+        url: "/blog-posts/" + idVal,
         method: "DELETE",
         success: () =>{
             init();
@@ -86,7 +86,7 @@ updatePost.on("click", event =>{
     
 
     $.ajax({
-        url: "http://localhost:8080/blog-posts/" + $(".id")[1].value,
+        url: "/blog-posts/" + $(".id")[1].value,
         method: "PUT",
         dataType: "JSON",
         contentType: "application/json",
