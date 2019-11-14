@@ -3,7 +3,7 @@ let deletePost = $("#deletePost");
 let updatePost = $("#updatePost");
 
 function init(){
-    let url = "http://localhost:8080/blog-posts";
+    let url = "/blog-posts";
 
     $.ajax({
         url: url,
@@ -14,11 +14,13 @@ function init(){
             $(list).html("");
 
             result.forEach(element => {
+                id = element["id"];
                 title = element["title"];
                 desc = element["content"];
                 author = element["author"];
 
                 $(list).append("<li> <div>" + 
+                                    "<p>Id: " + id + "</p>" +
                                     "<p>Title: " + title + "</p>" +
                                     "<p>Content: " + desc + "</p>" +
                                     "<p>Author: " + author + "</p>" +
@@ -40,7 +42,7 @@ insertPost.on("click", event =>{
     }
     
     $.ajax({
-        url: "http://localhost:8080/blog-posts",
+        url: "/blog-posts",
         method: "POST",
         dataType: "JSON",
         contentType: "application/json",
