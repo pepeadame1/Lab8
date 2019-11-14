@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Blog posts</title>
+</head>
+<body>
+    <span>
+        <h2>List of Blog-posts</h2>
+        <ul class="listOfPosts">
+        </ul>
+    </span>
+    <span>
+        <h2>Insert Blog-post</h2>
+        <div>
+            <label for="titleI">Title: </label>
+            <input type="text" id="titleI" class="title">
+        </div>
+        <div>
+            <label for="contentI">Content: </label>
+            <input type="text" id="contentI" class="content">
+        </div><div>
+            <label for="authorI">Author: </label>
+            <input type="text" id="authorI" class="author">
+        </div>
+        <div>
+            <input type="button" value="Insert Post" id="insertPost">
+        </div>
+    </span>
+    <span>
+        <h2>Delete Blog-post</h2>
+        </div><div>
+            <label for="idD">Id: </label>
+            <input type="text" id="idD" class="id">
+        </div>
+        <div>
+            <input type="button" value="Delete Post" id="deletePost">
+        </div>
+    </span>
+    <span>
+        <h2>Update Blog-post</h2>
+        </div><div>
+            <label for="idU">Id: </label>
+            <input type="text" id="idU" class="id">
+        </div>
+        <div>
+            <label for="titleU">Title: </label>
+            <input type="text" id="titleU" class="title">
+        </div>
+        <div>
+            <label for="contentU">Content: </label>
+            <input type="text" id="contentU" class="content">
+        </div><div>
+            <label for="authorU">Author: </label>
+            <input type="text" id="authorU" class="author">
+        </div>
+        <div>
+            <input type="button" value="Update Post" id="updatePost">
+        </div>
+    </span>
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.js" 
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
